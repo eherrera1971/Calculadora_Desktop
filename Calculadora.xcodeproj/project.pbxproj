@@ -15,6 +15,7 @@
 		218D810A15DF2C8900551333 /* CalculadoraAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D810915DF2C8900551333 /* CalculadoraAppDelegate.m */; };
 		218D810D15DF2C8900551333 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218D810B15DF2C8900551333 /* MainStoryboard.storyboard */; };
 		218D811015DF2C8900551333 /* CalculadoraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D810F15DF2C8900551333 /* CalculadoraViewController.m */; };
+		218D811815E050C400551333 /* ModeloCerebroCalculadora.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D811715E050C400551333 /* ModeloCerebroCalculadora.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,10 @@
 		218D810C15DF2C8900551333 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		218D810E15DF2C8900551333 /* CalculadoraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculadoraViewController.h; sourceTree = "<group>"; };
 		218D810F15DF2C8900551333 /* CalculadoraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculadoraViewController.m; sourceTree = "<group>"; };
+		218D811615E050C400551333 /* ModeloCerebroCalculadora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeloCerebroCalculadora.h; sourceTree = "<group>"; };
+		218D811715E050C400551333 /* ModeloCerebroCalculadora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeloCerebroCalculadora.m; sourceTree = "<group>"; };
+		21F0EAC315E06D710044E3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		21F0EAC415E06D710044E3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,8 @@
 			children = (
 				218D810815DF2C8900551333 /* CalculadoraAppDelegate.h */,
 				218D810915DF2C8900551333 /* CalculadoraAppDelegate.m */,
+				218D811715E050C400551333 /* ModeloCerebroCalculadora.m */,
+				218D811615E050C400551333 /* ModeloCerebroCalculadora.h */,
 				218D810B15DF2C8900551333 /* MainStoryboard.storyboard */,
 				218D810E15DF2C8900551333 /* CalculadoraViewController.h */,
 				218D810F15DF2C8900551333 /* CalculadoraViewController.m */,
@@ -125,7 +132,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Calculadora;
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Eduardo Herrera";
 			};
 			buildConfigurationList = 218D80EF15DF2C8900551333 /* Build configuration list for PBXProject "Calculadora" */;
@@ -165,6 +172,7 @@
 				218D810615DF2C8900551333 /* main.m in Sources */,
 				218D810A15DF2C8900551333 /* CalculadoraAppDelegate.m in Sources */,
 				218D811015DF2C8900551333 /* CalculadoraViewController.m in Sources */,
+				218D811815E050C400551333 /* ModeloCerebroCalculadora.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +183,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				218D810315DF2C8900551333 /* en */,
+				21F0EAC415E06D710044E3CF /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				218D810C15DF2C8900551333 /* en */,
+				21F0EAC315E06D710044E3CF /* es */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -194,14 +204,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = WalmartDemo;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -209,10 +236,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -221,19 +253,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = WalmartDemo;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -245,6 +297,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculadora/Calculadora-Prefix.pch";
 				INFOPLIST_FILE = "Calculadora/Calculadora-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Obelix.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +309,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculadora/Calculadora-Prefix.pch";
 				INFOPLIST_FILE = "Calculadora/Calculadora-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Obelix.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +334,7 @@
 				218D811515DF2C8900551333 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
